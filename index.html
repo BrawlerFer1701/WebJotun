@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./style_demo.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Tính toán lượng sơn nhà</h1>
+		<div class="main">
+			<div class="thongso">
+				<h2>Bước 1: Nhập thông số ngôi nhà</h2>
+				<form action="#">
+					<table id="thongso">
+						<tr>
+							<td class="stt">1</td>
+							<td class="noidung">Chiều dài ngôi nhà (m)</td>
+							<td class="dulieu_nhap">
+								<input type="text" id="chieudai" value="">
+							</td>
+						</tr>
+						<tr>
+							<td class="stt">2</td>
+							<td class="noidung">Chiều rộng ngôi nhà (m)</td>
+							<td class="dulieu_nhap">
+								<input type="text" id="chieurong" value="">
+							</td>
+						</tr>
+						<tr>
+							<td class="stt">3</td>
+							<td class="noidung">Số tầng nhà</td>
+							<td class="dulieu_nhap">
+								<input type="text" id="so_tang">
+							</td>
+						</tr>
+						<tr>
+							<td class="stt">4</td>
+							<td class="noidung">Chiều cao trung bình 1 tầng (m)</td>
+							<td class="dulieu_nhap">
+								<input type="text" id="chieucao_tang">
+							</td>
+						</tr>
+						<tr>
+							<td class="stt">5</td>
+							<td class="noidung">Chọn sơn màu ngoài trời</td>
+							<td class="dulieu_nhap" id="sonmau_troi">
+								<input type="checkbox"><span>Mặt trước</span><br>
+								<input type="checkbox"><span>1 mặt bên</span><br>
+								<input type="checkbox"><span>2 mặt bên</span><br>
+								<input type="checkbox"><span>Mặt sau</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="stt">6</td>
+							<td class="noidung">Chọn mặt sơn chống thấm ngoài trời</td>
+							<td class="dulieu_nhap" id="sonchongtham">
+								<input type="checkbox"><span>Mặt trước</span><br>
+								<input type="checkbox"><span>1 mặt bên</span><br>
+								<input type="checkbox"><span>2 mặt bên</span><br>
+								<input type="checkbox"><span>Mặt sau</span>
+							</td>
+						</tr>
+					</table>
+				</form>
+				<p id="ketqua"></p>
+				<button id="btn" onclick="tinhDienTich()">Click here</button>
+			</div>
+			<div class="nangcao">
+				<h2>Bước 2: Tính toán nâng cao</h2>
+				<form action="#">
+					<table id="dientich">
+						<tr>
+							<td class="stt">1</td>
+							<td class="noidung">Diện tích cần sơn lót trong nhà (tường + trần) (m<sup>2</sup>)</td>
+							<td class="dulieu_nhap">
+								<input type="text" id="dientich_lot">
+							</td>
+						</tr>
+						<tr>
+							<td class="stt">2</td>
+							<td class="noidung">
+								Diện tích trần nhà cần sơn trắng(m<sup>2</sup>)
+							</td>
+							<td class="dulieu_nhap">
+								<input type="text" id="dientich_tran">
+							</td>
+						</tr>
+						<tr>
+							<td class="stt">3</td>
+							<td class="noidung">
+								Diện tích tường trong nhà sơn màu (m<sup>2</sup>)
+							</td>
+							<td class="dulieu_nhap">
+								<input type="text" id="dientich_tuong_trong">
+							</td>
+						</tr>
+						<tr>
+							<td class="stt">4</td>
+							<td class="noidung">
+								Diện tích tường ngoài trời sơn lót (m<sup>2</sup>)
+							</td>
+							<td class="dulieu_nhap">
+								<input type="text" id="dientich_tuong_ngoai">
+							</td>
+						</tr>
+						<tr>
+							<td class="stt">5</td>
+							<td class="noidung">
+								Diện tích tường ngoài trời sơn màu (m<sup>2</sup>)
+							</td>
+							<td class="dulieu_nhap">
+								<input type="text" id="dientich_mau">
+							</td>
+						</tr>
+						<tr>
+							<td class="stt">6</td>
+							<td class="noidung">
+								Diện tích tường ngoài trời sơn chống thấm (m<sup>2</sup>)
+							</td>
+							<td class="dulieu_nhap">
+								<input type="text" id="dientich_chongtham">
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./demo.js"></script>
+</body>
+</html>
