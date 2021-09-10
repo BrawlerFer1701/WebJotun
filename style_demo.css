@@ -1,0 +1,75 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 30px;
+}
+h1{
+	color: #28CF4F;
+	margin-bottom: 30px;	
+}
+h2{
+	font-size: 16px;
+	text-decoration: underline;
+	margin-bottom: 15px;
+}
+.main{
+	display: flex;
+	justify-content: space-between;
+}
+.thongso, .nangcao{
+	flex-basis: 1;
+}
+.thongso{
+	margin-right: 15px;
+}
+table{
+	border-collapse: collapse;
+}
+tr:nth-child(even){
+	background: #D0C9C9;
+}
+/*tr{
+	height: 40px;
+}*/
+td{
+	border: 1px solid #c1c1c1;
+}
+.stt{
+	font-size: 20px;
+	font-weight: 600;
+	padding: 15px;
+	text-align: center;
+}
+.noidung{
+	padding: 15px 10px;
+	width: 350px;
+}
+.dulieu_nhap{
+	padding: 10px 15px;
+}
+.dulieu_nhap input[type="text"]{
+	outline: none;
+	padding: 5px 10px;
+	font-size: 14px;
+}
+.dulieu_nhap input[type="checkbox"]{
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+@media (max-width: 768px){
+	.main{
+		flex-direction: column;
+		justify-content: initial;
+	}
+	.thongso, .nangcao{
+		margin-bottom: 30px;
+		width: 100%;
+	}
+}
